@@ -11,19 +11,10 @@ class TodoController extends Controller
         $todo = Todo::all();
         return view('index')->with('todos',$todo);
     } 
-    public function create(){
-        return view('create');
-    }
     public function details(){
     
         $todo = Todo::all();
         return view('details')->with('todos',$todo);
-    
-    }
-    
-    public function edit(){
-    
-        return view('edit');
     
     }
     public function update($id){
